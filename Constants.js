@@ -56,13 +56,13 @@ var AUTHORIZATION_URL = 'https://accounts.google.com/o/oauth2/auth';
  * Google developer console client id.
  * @const {string}
  */
-var CLIENT_ID = 'Insert client id here';
+var CLIENT_ID = ScriptProperties.getProperty('client_id');
 
 /**
  * Google developer console client secret.
  * @const {string}
  */
-var CLIENT_SECRET = 'Insert client secret here';
+var CLIENT_SECRET = ScriptProperties.getProperty('client_secret');
 
 /**
  * Text mapping for daily frequency values.

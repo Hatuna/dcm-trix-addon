@@ -95,7 +95,7 @@ Once completed, move to the next section to continue the setup.
 
 ## Setting up authentication
 
-1.  Go to `File > project properties` and copy the script id. You will need this
+1.  Go to `File > Project Settings` and copy the script id. You will need this
     later.
 1.  In the same script editor go to `Resources > Cloud platform project` and
     click on the project link.
@@ -113,8 +113,10 @@ Once completed, move to the next section to continue the setup.
     `Restrictions`, paste `https://script.google.com/macros/d/{SCRIPT
     ID}/usercallback` with `{SCRIPT ID}` replaced with the value obtained
     earlier.
-1.  Hit 'create' - copy the client id and client secret values and paste them in
-    `Constants.gs` file for `CLIENT_ID` and `CLIENT_SECRET` respectively.
+1.  Hit 'create' - copy the client id and client secret values.
+
+1.  In the Script menu, go to `Project Settings > Script Properties` and add the properties `client_id` and `client_secret` with the corresponding values copied in the previous step. Remember that it is case sensitive, so both properties must be written in lowercase.
+
 1.  Go back to the spreadsheet and refresh the document. Verify that the addon
     is visible in `Add-ons > dcm-trix-addon`. The name may be different if you
     had given a different name earlier.
